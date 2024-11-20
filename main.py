@@ -1,9 +1,11 @@
 import gradio as gr
-from airllm import HuggingFaceModelLoader, AutoModelForCausalLM
+from airllm import AutoModel
 
 # model_loader = HuggingFaceModelLoader("meta-llama/Meta-Llama-3-70B-Instruct")
-model_loader = HuggingFaceModelLoader("meta-llama/Llama-3.2-3B")
-model = AutoModelForCausalLM.from_pretrained(model_loader)
+# model_loader = HuggingFaceModelLoader("meta-llama/Llama-3.2-3B")
+# model = AutoModelForCausalLM.from_pretrained(model_loader)
+
+model = AutoModel.from_pretrained("garage-bAInd/Platypus2-7B")
 
 def generate_text(input_text):
     input_ids = model.tokenizer.encode(input_text, return_tensors="pt")
