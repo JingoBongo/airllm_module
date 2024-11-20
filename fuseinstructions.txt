@@ -1,0 +1,2 @@
+{aivenv} -m pip install -r [requirements.txt]
+{aivenv} main.py
