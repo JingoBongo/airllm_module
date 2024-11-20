@@ -3,3 +3,4 @@ airllm
 gradio
 torch
 transformers
+sentencepiece
