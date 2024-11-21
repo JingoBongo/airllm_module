@@ -1,5 +1,9 @@
 sentencepiece
 bitsandbytes
+torch
+torchvision
+torchaudio
+sentencepiece
 flask
 airllm
 gradio
